@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="game">
+
+        <h2 class="game__title">Составьте свою <br>карту желаний</h2>
+
+        <div class="game__flex">
+            <div class="game__left">
+                <div class="game__dropzone">
+                    <div class="game__dropitem"><div class="game__hole js-drop"></div></div>
+                    <div class="game__dropitem"><div class="game__hole js-drop"></div></div>
+                    <div class="game__dropitem"><div class="game__hole js-drop"></div></div>
+                    <div class="game__dropitem"><div class="game__hole js-drop"></div></div>
+                    <div class="game__dropitem"><div class="game__hole js-drop"></div></div>
+                    <div class="game__dropitem"><div class="game__hole js-drop"></div></div>
+                    <div class="game__dropitem"><div class="game__hole js-drop"></div></div>
+                    <div class="game__dropitem"><div class="game__hole js-drop"></div></div>
+                    <div class="game__dropitem"><div class="game__hole js-drop"></div></div>
+                    <div class="game__dropitem"><div class="game__hole js-drop"></div></div>
+                    <div class="game__dropitem"><div class="game__hole js-drop"></div></div>
+                    <div class="game__dropitem"><div class="game__hole js-drop"></div></div>
+                </div>
+                <div class="game__btns">
+                    <button type="button" class="game__btn js-game-save">Сохранить</button>
+                    <button type="button" class="game__btn js-game-print">РАСПЕЧАТАТЬ</button>
+                </div>
+            </div>
+            <div class="game__right">
+                <div class="game__dragzone" data-scroll="0">
+                    <div class="game__item">
+                        <div class="game__hole js-drag">
+                            <img src="images/g1.svg" alt="Собственная квартира" data-id="1">
+                        </div>
+                        <div class="game__name">Собственная квартира</div>
+                    </div>
+                    <div class="game__item">
+                        <div class="game__hole js-drag">
+                            <img src="images/g2.svg" alt="Ювелирное украшение" data-id="2">
+                        </div>
+                        <div class="game__name">Ювелирное украшение</div>
+                    </div>
+                    <div class="game__item">
+                        <div class="game__hole js-drag">
+                            <img src="images/g3.svg" alt="Новый смартфон" data-id="3">
+                        </div>
+                        <div class="game__name">Новый смартфон</div>
+                    </div>
+                    <div class="game__item">
+                        <div class="game__hole js-drag">
+                            <img src="images/g4.svg" alt="Путешествие" data-id="4">
+                        </div>
+                        <div class="game__name game__name--m">Путешествие</div>
+                    </div>
+                    <div class="game__item">
+                        <div class="game__hole js-drag">
+                            <img src="images/g5.svg" alt="Образовательный курс" data-id="5">
+                        </div>
+                        <div class="game__name game__name--s">Образовательный курс</div>
+                    </div>
+                    <div class="game__item">
+                        <div class="game__hole js-drag">
+                            <img src="images/g6.svg" alt="Вечернее платье" data-id="6">
+                        </div>
+                        <div class="game__name">Вечернее платье</div>
+                    </div>
+                    <div class="game__item">
+                        <div class="game__hole js-drag">
+                            <img src="images/g7.svg" alt="Домашний кинотеатр" data-id="7">
+                        </div>
+                        <div class="game__name">Домашний кинотеатр</div>
+                    </div>
+                    <div class="game__item">
+                        <div class="game__hole js-drag">
+                            <img src="images/g8.svg" alt="Абонемент в фитнес-клуб" data-id="8">
+                        </div>
+                        <div class="game__name">Абонемент в фитнес-клуб</div>
+                    </div>
+                    <div class="game__item">
+                        <div class="game__hole js-drag">
+                            <img src="images/g9.svg" alt="Ремонт в квартире" data-id="9">
+                        </div>
+                        <div class="game__name">Ремонт в квартире</div>
+                    </div>
+                    <div class="game__item">
+                        <div class="game__hole js-drag">
+                            <img src="images/g10.svg" alt="Модная сумка" data-id="10">
+                        </div>
+                        <div class="game__name">Модная сумка</div>
+                    </div>
+                    <div class="game__item">
+                        <div class="game__hole js-drag">
+                            <img src="images/g11.svg" alt="Модные сапоги" data-id="11">
+                        </div>
+                        <div class="game__name">Модные сапоги</div>
+                    </div>
+                    <div class="game__item">
+                        <div class="game__hole js-drag">
+                            <img src="images/g12.svg" alt="Шуба" data-id="12">
+                        </div>
+                        <div class="game__name">Шуба</div>
+                    </div>
+                    <div class="game__item">
+                        <div class="game__hole js-drag">
+                            <img src="images/g13.svg" alt="Книга модного автора" data-id="13">
+                        </div>
+                        <div class="game__name">Книга модного автора</div>
+                    </div>
+                    <div class="game__item">
+                        <div class="game__hole js-drag">
+                            <img src="images/g14.svg" alt="Музыкальный диск или виниловая пластинка" data-id="14">
+                        </div>
+                        <div class="game__name game__name--m">Музыкальный диск или виниловая пластинка</div>
+                    </div>
+                    <div class="game__item">
+                        <div class="game__hole js-drag">
+                            <img src="images/g15.svg" alt="Билет на концерт любимого исполнителя" data-id="15">
+                        </div>
+                        <div class="game__name game__name--s">Билет на концерт любимого исполнителя</div>
+                    </div>
+                    <div class="game__item">
+                        <div class="game__hole js-drag">
+                            <img src="images/g16.svg" alt="Сертификат в салон красоты" data-id="16">
+                        </div>
+                        <div class="game__name">Сертификат в салон красоты</div>
+                    </div>
+                    <div class="game__item">
+                        <div class="game__hole js-drag">
+                            <img src="images/g17.svg" alt="Новый компьютер" data-id="17">
+                        </div>
+                        <div class="game__name">Новый компьютер</div>
+                    </div>
+                    <div class="game__item">
+                        <div class="game__hole js-drag">
+                            <img src="images/g18.svg" alt="Набор косметики известного бренда" data-id="18">
+                        </div>
+                        <div class="game__name">Набор косметики известного бренда</div>
+                    </div>
+                    <div class="game__item">
+                        <div class="game__hole js-drag">
+                            <img src="images/g19.svg" alt="Мастер-класс по кулинарии у известного шеф-повара" data-id="19">
+                        </div>
+                        <div class="game__name game__name--m">Мастер-класс по кулинарии у известного шеф-повара</div>
+                    </div>
+                    <div class="game__item">
+                        <div class="game__hole js-drag">
+                            <img src="images/g20.svg" alt="Увлажнитель-очиститель воздуха для квартиры" data-id="20">
+                        </div>
+                        <div class="game__name game__name--m">Увлажнитель-очиститель воздуха для квартиры</div>
+                    </div>
+                    <div class="game__item">
+                        <div class="game__hole js-drag">
+                            <img src="images/g21.svg" alt="Горнолыжный костюм" data-id="21">
+                        </div>
+                        <div class="game__name game__name--m">Горнолыжный костюм</div>
+                    </div>
+                    <div class="game__item">
+                        <div class="game__hole js-drag">
+                            <img src="images/g22.svg" alt="Снаряжение для горных или беговых лыж" data-id="22">
+                        </div>
+                        <div class="game__name game__name--m">Снаряжение для горных или беговых лыж</div>
+                    </div>
+                    <div class="game__item">
+                        <div class="game__hole js-drag">
+                            <img src="images/g23.svg" alt="Столик для макияжа" data-id="23">
+                        </div>
+                        <div class="game__name">Столик для макияжа</div>
+                    </div>
+                    <div class="game__item">
+                        <div class="game__hole js-drag">
+                            <img src="images/g24.svg" alt="Набор фарфоровой посуды" data-id="24">
+                        </div>
+                        <div class="game__name">Набор фарфоровой посуды</div>
+                    </div>
+                    <div class="game__item">
+                        <div class="game__hole js-drag">
+                            <img src="images/g25.svg" alt="Магнитный конструктор для ребенка" data-id="25">
+                        </div>
+                        <div class="game__name game__name--m">Магнитный конструктор для ребенка</div>
+                    </div>
+                    <div class="game__item">
+                        <div class="game__hole js-drag">
+                            <img src="images/g26.svg" alt="Профессиональная фотокамера" data-id="26">
+                        </div>
+                        <div class="game__name game__name--sm">Профессиональная фотокамера</div>
+                    </div>
+                    <div class="game__item">
+                        <div class="game__hole js-drag">
+                            <img src="images/g27.svg" alt="Посудомоечная машина" data-id="27">
+                        </div>
+                        <div class="game__name game__name--sm">Посудомоечная машина</div>
+                    </div>
+                    <div class="game__item">
+                        <div class="game__hole js-drag">
+                            <img src="images/g28.svg" alt="Робот - пылесос " data-id="28">
+                        </div>
+                        <div class="game__name">Робот <br>- пылесос</div>
+                    </div>
+                    <div class="game__item">
+                        <div class="game__hole js-drag">
+                            <img src="images/g29.svg" alt="Мультиварка или йогуртница " data-id="29">
+                        </div>
+                        <div class="game__name">Мультиварка или йогуртница </div>
+                    </div>
+                    <div class="game__item">
+                        <div class="game__hole js-drag">
+                            <img src="images/g30.svg" alt="Велосипед" data-id="30">
+                        </div>
+                        <div class="game__name">Велосипед</div>
+                    </div>
+                </div>
+
+                <a href="javascript:;" class="game__arrow game__arrow--up game__arrow--disabled js-game-up">
+                    <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip1)"  transform="translate(45 45) rotate(-180)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.8125 5.625L2.8125 39.375C2.8125 40.1209 3.10882 40.8363 3.63626 41.3637C4.16371 41.8912 4.87908 42.1875 5.625 42.1875L39.375 42.1875C40.1209 42.1875 40.8363 41.8912 41.3637 41.3637C41.8912 40.8363 42.1875 40.1209 42.1875 39.375L42.1875 5.625C42.1875 4.87908 41.8912 4.16371 41.3637 3.63626C40.8363 3.10882 40.1209 2.8125 39.375 2.8125L5.625 2.8125C4.87908 2.8125 4.16371 3.10882 3.63626 3.63626C3.10882 4.16371 2.8125 4.87908 2.8125 5.625ZM6.70775e-08 39.375C4.92874e-08 40.8668 0.592632 42.2976 1.64752 43.3525C2.70242 44.4074 4.13316 45 5.625 45L39.375 45C40.8668 45 42.2976 44.4074 43.3525 43.3525C44.4074 42.2976 45 40.8668 45 39.375L45 5.625C45 4.13316 44.4074 2.70242 43.3525 1.64753C42.2976 0.592633 40.8668 4.87332e-07 39.375 4.69542e-07L5.625 6.70775e-08C4.13316 4.92874e-08 2.70242 0.592632 1.64752 1.64753C0.592633 2.70242 4.87332e-07 4.13316 4.69542e-07 5.625L6.70775e-08 39.375Z" fill="#E5E5E5"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M31.9329 21.5043C31.8023 21.3733 31.6471 21.2694 31.4763 21.1985C31.3054 21.1277 31.1223 21.0912 30.9373 21.0912C30.7523 21.0912 30.5692 21.1277 30.3983 21.1985C30.2275 21.2694 30.0723 21.3733 29.9417 21.5043L22.4998 28.949L15.0579 21.5043C14.9272 21.3736 14.772 21.2698 14.6012 21.1991C14.4303 21.1283 14.2472 21.0919 14.0623 21.0919C13.8774 21.0919 13.6943 21.1283 13.5235 21.1991C13.3527 21.2698 13.1974 21.3736 13.0667 21.5043C12.936 21.635 12.8322 21.7903 12.7615 21.9611C12.6907 22.1319 12.6543 22.315 12.6543 22.4999C12.6543 22.6848 12.6907 22.8679 12.7615 23.0388C12.8322 23.2096 12.936 23.3648 13.0667 23.4956L21.5042 31.9331C21.6348 32.064 21.79 32.1679 21.9609 32.2388C22.1317 32.3097 22.3148 32.3462 22.4998 32.3462C22.6848 32.3462 22.8679 32.3097 23.0388 32.2388C23.2096 32.1679 23.3648 32.064 23.4954 31.9331L31.9329 23.4956C32.0639 23.3649 32.1678 23.2097 32.2387 23.0389C32.3096 22.8681 32.3461 22.6849 32.3461 22.4999C32.3461 22.315 32.3096 22.1318 32.2387 21.961C32.1678 21.7901 32.0639 21.6349 31.9329 21.5043Z" fill="#E5E5E5"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M22.5 12.6563C22.127 12.6563 21.7694 12.8044 21.5056 13.0681C21.2419 13.3319 21.0938 13.6895 21.0938 14.0625L21.0938 28.125C21.0938 28.498 21.2419 28.8556 21.5056 29.1194C21.7694 29.3831 22.127 29.5313 22.5 29.5313C22.873 29.5313 23.2306 29.3831 23.4944 29.1194C23.7581 28.8556 23.9063 28.498 23.9063 28.125L23.9063 14.0625C23.9063 13.6895 23.7581 13.3319 23.4944 13.0681C23.2306 12.8044 22.873 12.6563 22.5 12.6563Z" fill="#E5E5E5"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip1">
+                                <rect width="45" height="45" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+                <a href="javascript:;" class="game__arrow game__arrow--down js-game-down">
+                    <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.8125 5.625L2.8125 39.375C2.8125 40.1209 3.10882 40.8363 3.63626 41.3637C4.16371 41.8912 4.87908 42.1875 5.625 42.1875L39.375 42.1875C40.1209 42.1875 40.8363 41.8912 41.3637 41.3637C41.8912 40.8363 42.1875 40.1209 42.1875 39.375L42.1875 5.625C42.1875 4.87908 41.8912 4.16371 41.3637 3.63626C40.8363 3.10882 40.1209 2.8125 39.375 2.8125L5.625 2.8125C4.87908 2.8125 4.16371 3.10882 3.63626 3.63626C3.10882 4.16371 2.8125 4.87908 2.8125 5.625ZM6.70775e-08 39.375C4.92874e-08 40.8668 0.592632 42.2976 1.64752 43.3525C2.70242 44.4074 4.13316 45 5.625 45L39.375 45C40.8668 45 42.2976 44.4074 43.3525 43.3525C44.4074 42.2976 45 40.8668 45 39.375L45 5.625C45 4.13316 44.4074 2.70242 43.3525 1.64753C42.2976 0.592633 40.8668 4.87332e-07 39.375 4.69542e-07L5.625 6.70775e-08C4.13316 4.92874e-08 2.70242 0.592632 1.64752 1.64753C0.592633 2.70242 4.87332e-07 4.13316 4.69542e-07 5.625L6.70775e-08 39.375Z" fill="#E5E5E5"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M31.9329 21.5043C31.8023 21.3733 31.6471 21.2694 31.4763 21.1985C31.3054 21.1277 31.1223 21.0912 30.9373 21.0912C30.7523 21.0912 30.5692 21.1277 30.3983 21.1985C30.2275 21.2694 30.0723 21.3733 29.9417 21.5043L22.4998 28.949L15.0579 21.5043C14.9272 21.3736 14.772 21.2698 14.6012 21.1991C14.4303 21.1283 14.2472 21.0919 14.0623 21.0919C13.8774 21.0919 13.6943 21.1283 13.5235 21.1991C13.3527 21.2698 13.1974 21.3736 13.0667 21.5043C12.936 21.635 12.8322 21.7903 12.7615 21.9611C12.6907 22.1319 12.6543 22.315 12.6543 22.4999C12.6543 22.6848 12.6907 22.8679 12.7615 23.0388C12.8322 23.2096 12.936 23.3648 13.0667 23.4956L21.5042 31.9331C21.6348 32.064 21.79 32.1679 21.9609 32.2388C22.1317 32.3097 22.3148 32.3462 22.4998 32.3462C22.6848 32.3462 22.8679 32.3097 23.0388 32.2388C23.2096 32.1679 23.3648 32.064 23.4954 31.9331L31.9329 23.4956C32.0639 23.3649 32.1678 23.2097 32.2387 23.0389C32.3096 22.8681 32.3461 22.6849 32.3461 22.4999C32.3461 22.315 32.3096 22.1318 32.2387 21.961C32.1678 21.7901 32.0639 21.6349 31.9329 21.5043Z" fill="#E5E5E5"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M22.5 12.6563C22.127 12.6563 21.7694 12.8044 21.5056 13.0681C21.2419 13.3319 21.0938 13.6895 21.0938 14.0625L21.0938 28.125C21.0938 28.498 21.2419 28.8556 21.5056 29.1194C21.7694 29.3831 22.127 29.5313 22.5 29.5313C22.873 29.5313 23.2306 29.3831 23.4944 29.1194C23.7581 28.8556 23.9063 28.498 23.9063 28.125L23.9063 14.0625C23.9063 13.6895 23.7581 13.3319 23.4944 13.0681C23.2306 12.8044 22.873 12.6563 22.5 12.6563Z" fill="#E5E5E5"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0">
+                                <rect width="45" height="45" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

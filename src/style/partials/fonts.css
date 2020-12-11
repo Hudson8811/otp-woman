@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Squad';
+    src: url('../fonts/Squad-Regular.eot');
+    src: local('Squad Regular'), local('Squad-Regular'),
+    url('../fonts/Squad-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Squad-Regular.woff2') format('woff2'),
+    url('../fonts/Squad-Regular.woff') format('woff'),
+    url('../fonts/Squad-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Squad';
+    src: url('../fonts/Squad-ExtraBold.eot');
+    src: local('Squad ExtraBold'), local('Squad-ExtraBold'),
+    url('../fonts/Squad-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Squad-ExtraBold.woff2') format('woff2'),
+    url('../fonts/Squad-ExtraBold.woff') format('woff'),
+    url('../fonts/Squad-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
