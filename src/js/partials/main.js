@@ -166,7 +166,7 @@ $('.js-game-save').on('click',function (){
             },
             success: function(data) {
                 if (data != '') {
-                    var myUrl = window.location.href;
+                    var myUrl = window.location.origin;
                     myUrl  = myUrl.replace(/\/$/, '');
                     forceDownload(myUrl + data,'wishcard.jpg');
                     $('.game__btn').prop('disabled',false);
@@ -195,14 +195,14 @@ $('.js-game-print').on('click',function (){
         var jsonItems = JSON.stringify(arrayItems);
         $.ajax({
             type: "POST",
-            url: "/print/",
+            url: "/save/",
             data: jsonItems,
             beforeSend: function () {
                 $('.game__btn').prop('disabled',true);
             },
             success: function(data) {
                 if (data != '') {
-                    var myUrl = window.location.href;
+                    var myUrl = window.location.origin;
                     myUrl  = myUrl.replace(/\/$/, '');
                     printImg(myUrl + data);
                     $('.game__btn').prop('disabled',false);
