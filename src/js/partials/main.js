@@ -165,8 +165,12 @@ $('.js-game-save').on('click',function (){
                 $('.game__btn').prop('disabled',true);
             },
             success: function(data) {
-                alert('Сохранено');
-                $('.game__btn').prop('disabled',false);
+                if (data != '') {
+                    var myUrl = window.location.href;
+                    myUrl  = myUrl.replace(/\/$/, '');
+                    forceDownload(myUrl + data,'wishcard.jpg');
+                    $('.game__btn').prop('disabled',false);
+                }
             },
             error: function (jqXHR, textStatus, errorThrown) {
                 alert('Error '+jqXHR.status);
@@ -179,6 +183,7 @@ $('.js-game-save').on('click',function (){
 $('.js-game-print').on('click',function (){
     var items = $('.game__dropzone').find('img');
     var count = items.length;
+
     if (count < 12) {
         alert('Заполните карту до конца.');
     } else {
@@ -196,7 +201,12 @@ $('.js-game-print').on('click',function (){
                 $('.game__btn').prop('disabled',true);
             },
             success: function(data) {
-                alert('Сохранено');
+                if (data != '') {
+                    var myUrl = window.location.href;
+                    myUrl  = myUrl.replace(/\/$/, '');
+                    printImg(myUrl + data);
+                    $('.game__btn').prop('disabled',false);
+                }
                 $('.game__btn').prop('disabled',false);
             },
             error: function (jqXHR, textStatus, errorThrown) {
@@ -233,3 +243,27 @@ $('.js-game-up').on('click',function (){
         $('.js-game-down').removeClass('game__arrow--disabled');
     }
 });
+
+
+function forceDownload(url, fileName){
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", url, true);
+    xhr.responseType = "blob";
+    xhr.onload = function(){
+        var urlCreator = window.URL || window.webkitURL;
+        var imageUrl = urlCreator.createObjectURL(this.response);
+        var tag = document.createElement('a');
+        tag.href = imageUrl;
+        tag.download = fileName;
+        document.body.appendChild(tag);
+        tag.click();
+        document.body.removeChild(tag);
+    }
+    xhr.send();
+}
+
+function printImg(url) {
+    var win = window.open('');
+    win.document.write('<img src="' + url + '" onload="window.print();window.close()" />');
+    win.focus();
+}
